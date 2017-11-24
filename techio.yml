@@ -1,4 +1,4 @@
-title: Simple Java Template
+title: Design Pattern Command
 plan:
-- title: Java Snippet
-  statement: statement.md
+- title: Presentation
+  statement: fichiers/statement.md
