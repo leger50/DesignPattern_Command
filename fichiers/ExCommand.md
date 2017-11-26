@@ -1,8 +1,4 @@
-# Exemple
-
-**Mettre le modelio**
-
-#Première étape
+# Première étape
 
 On crée nos objets _receiver_ :
 
