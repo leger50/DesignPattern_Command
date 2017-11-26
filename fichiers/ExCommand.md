@@ -392,7 +392,7 @@ class Commande_OnAll implements Icommande{
 }
 // }
 // class Commande_OffAll implements Icommande { autofold
-public class Commande_OffAll implements Icommande{
+class Commande_OffAll implements Icommande{
 	
 	private Console console;
 	private Radio radio;
