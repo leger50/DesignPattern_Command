@@ -4,3 +4,5 @@ plan:
   statement: fichiers/introduction.md
 - title: Le Pattern Command
   statement: fichiers/PatternCommand.md
+- title: Un exemple
+  statement: fichiers/ExCommand.md
