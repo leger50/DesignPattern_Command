@@ -1,4 +1,6 @@
 title: Design Pattern Command
 plan:
 - title: Presentation
-  statement: fichiers/statement.md
+  statement: fichiers/introduction.md
+- title: Le Pattern Command
+  statement: fichiers/PatternCommand.md
