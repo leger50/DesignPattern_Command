@@ -28,6 +28,8 @@ Le client actionne l’Invocator de la salade césar (un bouton souvent).
 La ConcreteCommande « PreparerSaladeCesar » est exécutée et crée une nouvelle assiette.
 Puis cette CC va invoquer les méthodes addSalade(), addPate() et addPoulet() de l’assiette.
 
+![Uml of exemple PatternCommand](../images/DesignCommand_exCooking.png)
+
 Ainsi, on voit clairement l’encapsulation ici, où le client n’a pas connaissance ; ni de l’objet assiette, ni des méthodes qui lui sont appliquées.
 
 
