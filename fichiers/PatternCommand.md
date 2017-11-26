@@ -22,8 +22,8 @@ Détaillons ce pattern :
 Le client commande une salade composée. Il crée une nouvelle assiette, sur laquelle il exécute les méthodes : addSalade(), addPate() et addPoulet().
 
 **Avec le pattern command :**
-Le client actionne _l’Invocator_ de la salade césar (un bouton souvent).
-La _ConcreteCommande_ « PreparerSaladeCesar » est exécutée et va créer une nouvelle assiette.
+Le client actionne _l’Invocator_ de la salade césar (un bouton souvent).  
+La _ConcreteCommande_ « PreparerSaladeCesar » est exécutée et va créer une nouvelle assiette.  
 Ce qui pour conséquence d'invoquer les méthodes _addSalade()_, _addPate()_ et _addPoulet()_ de l’assiette.
 
 ![Uml of exemple PatternCommand](../images/DesignCommand_exCooking.PNG)
