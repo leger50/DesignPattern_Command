@@ -6,3 +6,5 @@ plan:
   statement: fichiers/PatternCommand.md
 - title: Un exemple
   statement: fichiers/ExCommand.md
+- title: Le quizz
+  statement: fichiers/quizz.md
