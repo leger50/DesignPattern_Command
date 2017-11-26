@@ -8,7 +8,7 @@ Comme vous l’aurez compris ce pattern a, tout d’abord, un but de sécurité 
 
 # Son implémentation ?
 
-![Uml of Design Pattern Command](../DesignCommand_UML.png)
+![Uml of Design Pattern Command](../images/DesignCommand_UML.png)
 Ça peut paraitre un peu barbare comme diagramme mais nous allons voir par la suite que le principe est très facile à comprendre.
 
 Détaillons ce pattern :
