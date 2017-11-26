@@ -391,6 +391,30 @@ class Commande_OnAll implements Icommande{
 
 }
 // }
+// class Commande_OffAll implements Icommande { autofold
+public class Commande_OffAll implements Icommande{
+	
+	private Console console;
+	private Radio radio;
+	
+	public Commande_OffAll(Console theConsole, Radio theRadio) {
+		this.console = theConsole;
+		this.radio = theRadio;
+	}
+	
+	@Override
+	public void execute() {
+		this.console.off();
+		this.radio.off();
+	}
+
+	@Override
+	public void undo() {
+		this.console.on();
+		this.radio.on();
+	}
+}
+// }
 // class Telecommande { autofold
 class Telecommande {
 	private Icommande bouton1;
@@ -456,8 +480,7 @@ public class Main {
 		telecommandeConsole.pressBtn2(); //on eteint la console
 		
 		//Et si on faisait une telecommande pour gerer l'etat de chaque device...
-		Telecommande telecommandeMultiple = new Telecommande(new Commande_OnAll(console, radio), 
-			new Commande_OffAll(console, radio));
+		Telecommande telecommandeMultiple = new Telecommande(new Commande_OnAll(console, radio), new Commande_OffAll(console, radio));
 		
 		telecommandeMultiple.pressBtn1();
 		telecommandeMultiple.pressBtn2();
