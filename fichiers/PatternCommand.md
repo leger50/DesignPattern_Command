@@ -1,6 +1,6 @@
 # Son but ?
 
-Ce pattern répond au besoin d’émettre des requêtes sur des objets sans ne rien connaitre des opérations nécessaires ou du destinataire. Pour cela nous utilisons l’encapsulation des requêtes.
+Ce pattern répond au besoin d’émettre des requêtes sur n'importe quel objet, sans connaitre, ni ses caractéristiques, ni ses fonctions. Pour cela nous utilisons l’encapsulation des requêtes.
 
 _Petit rappel :_ l’encapsulation consiste à cacher l'implémentation de l'objet, en empêchant l'accès aux données par un autre moyen que les services proposés. L'encapsulation permet donc de garantir l'intégrité des données contenues dans l'objet.
 
@@ -13,10 +13,8 @@ Comme vous l’aurez compris ce pattern a, tout d’abord, un but de sécurité 
 
 Détaillons ce pattern :
 -	Le client va déclencher une requete, role _d'invocator_
--	A cette action est associé une commande, une _concreteCommande_ implémentant l'interface _Commande_,
--	La _concrete commande_ va declencher l'action de l'objet, declenché la méthode de l'objet associée, il est le _receiver_.
-
-**A detailler plus !**
+-	À cette action est associée une commande, une _concreteCommande_ implémentant l'interface _Commande_,
+-	La _concrete commande_ va ensuite déclencher la méthode de l'objet associée, il est le _receiver_.
 
 # Parce qu'un exemple vaut mieux qu'un long discours...
 
@@ -24,13 +22,13 @@ Détaillons ce pattern :
 Le client commande une salade composée. Il crée une nouvelle assiette, sur laquelle il exécute les méthodes : addSalade(), addPate() et addPoulet().
 
 **Avec le pattern command :**
-Le client actionne l’Invocator de la salade césar (un bouton souvent).
-La ConcreteCommande « PreparerSaladeCesar » est exécutée et crée une nouvelle assiette.
-Puis cette CC va invoquer les méthodes addSalade(), addPate() et addPoulet() de l’assiette.
+Le client actionne _l’Invocator_ de la salade césar (un bouton souvent).
+La _ConcreteCommande_ « PreparerSaladeCesar » est exécutée et va créer une nouvelle assiette.
+Ce qui pour conséquence d'invoquer les méthodes _addSalade()_, _addPate()_ et _addPoulet()_ de l’assiette.
 
 ![Uml of exemple PatternCommand](../images/DesignCommand_exCooking.PNG)
 
-Ainsi, on voit clairement l’encapsulation ici, où le client n’a pas connaissance ; ni de l’objet assiette, ni des méthodes qui lui sont appliquées.
+Ainsi, nous pouvons voir ici le rôle majeur de l'encapsulation. En effet, le client n’a pas connaissance ; ni de l’objet assiette, ni des méthodes qui lui sont appliquées.
 
 
 
