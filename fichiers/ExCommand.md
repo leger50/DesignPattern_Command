@@ -472,12 +472,15 @@ public class Main {
 		telecommandeRadio.pressBtn4(); //VolumeDown
 		telecommandeRadio.pressBtn2(); //On eteint la radio
 		
+		System.out.println("");
 		
 		//Test télécommande console
 		telecommandeConsole.pressBtn1(); //On allume la console
 		telecommandeConsole.pressBtn3(); //StartGame
 		telecommandeConsole.pressBtn4(); //StopGame
 		telecommandeConsole.pressBtn2(); //on eteint la console
+		
+		System.out.println("");
 		
 		//Et si on faisait une telecommande pour gerer l'etat de chaque device...
 		Telecommande telecommandeMultiple = new Telecommande(new Commande_OnAll(console, radio), new Commande_OffAll(console, radio));
