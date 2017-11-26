@@ -448,7 +448,7 @@ public class Telecommande {
 }
 // }
 
-public class TestDesTelecommandes {
+public class Main {
 
 	public static void main(String[] args) {
 		// Creation telecommande Radio
