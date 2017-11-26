@@ -156,7 +156,7 @@ Nous avons ici fait le choix d'utiliser une télécommande à 4 boutons, comme v
 
 ```java runnable
 // Class Console { autofold 
-public class Console {
+class Console {
 
 	public void on(){
 		System.out.println("La console est allumée");
@@ -176,7 +176,7 @@ public class Console {
 }
 // }
 // Class Radio { autofold
-public class Radio {
+class Radio {
 	
 	private int volume = 0;
 	
@@ -200,14 +200,14 @@ public class Radio {
 }
 // }
 // Interface Icommande { autofold
-public interface Icommande {
+interface Icommande {
 
 	public void execute();
 	public void undo();
 }
 // }
 // class Commande_ConsoleOff implements Icommande { autofold
-public class Commande_ConsoleOff implements Icommande{
+class Commande_ConsoleOff implements Icommande{
 
 	private Console console;
 	
@@ -227,7 +227,7 @@ public class Commande_ConsoleOff implements Icommande{
 }
 // }
 // class Commande_ConsoleOn implements Icommande { autofold
-public class Commande_ConsoleOn implements Icommande{
+class Commande_ConsoleOn implements Icommande{
 
 	private Console console;
 	
@@ -247,7 +247,7 @@ public class Commande_ConsoleOn implements Icommande{
 }
 // }
 // class Commande_ConsoleStopGame implements Icommande { autofold
-public class Commande_ConsoleStopGame implements Icommande{
+class Commande_ConsoleStopGame implements Icommande{
 
 	private Console console;
 	
@@ -267,7 +267,7 @@ public class Commande_ConsoleStopGame implements Icommande{
 }
 // }
 // class Commande_ConsoleStartGame implements Icommande { autofold
-public class Commande_ConsoleStartGame implements Icommande {
+class Commande_ConsoleStartGame implements Icommande {
 	
 	private Console console;
 	
@@ -287,7 +287,7 @@ public class Commande_ConsoleStartGame implements Icommande {
 }
 // }
 // class Commande_ConsoleStartGame implements Icommande { autofold
-public class Commande_ConsoleStartGame implements Icommande {
+class Commande_ConsoleStartGame implements Icommande {
 	
 	private Console console;
 	
@@ -307,7 +307,7 @@ public class Commande_ConsoleStartGame implements Icommande {
 }
 // }
 // class Commande_RadioOn implements Icommande { autofold
-public class Commande_RadioOn implements Icommande{
+class Commande_RadioOn implements Icommande{
 	
 	private Radio radio;
 	
@@ -327,7 +327,7 @@ public class Commande_RadioOn implements Icommande{
 }
 // }
 // class Commande_RadioOff implements Icommande { autofold
-public class Commande_RadioOff implements Icommande{
+class Commande_RadioOff implements Icommande{
 	
 	private Radio radio;
 	
@@ -347,7 +347,7 @@ public class Commande_RadioOff implements Icommande{
 }
 // }
 // class Commande_RadioVolumeUp implements Icommande { autofold
-public class Commande_RadioVolumeUp implements Icommande{
+class Commande_RadioVolumeUp implements Icommande{
 	
 	private Radio radio;
 	
@@ -367,7 +367,7 @@ public class Commande_RadioVolumeUp implements Icommande{
 }
 // }
 // class Commande_RadioVolumeDown implements Icommande { autofold
-public class Commande_RadioVolumeDown implements Icommande{
+class Commande_RadioVolumeDown implements Icommande{
 
 	private Radio radio;
 	
@@ -387,7 +387,7 @@ public class Commande_RadioVolumeDown implements Icommande{
 }
 // }
 // class Commande_OnAll implements Icommande { autofold
-public class Commande_OnAll implements Icommande{
+class Commande_OnAll implements Icommande{
 	
 	private Console console;
 	private Radio radio;
@@ -412,7 +412,7 @@ public class Commande_OnAll implements Icommande{
 }
 // }
 // class Telecommande { autofold
-public class Telecommande {
+class Telecommande {
 	private Icommande bouton1;
 	private Icommande bouton2;
 	private Icommande bouton3;
