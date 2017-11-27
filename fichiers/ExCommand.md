@@ -1,3 +1,7 @@
+# Diagramme
+
+![Uml exemple of Design Pattern Command](../images/DesignCommand_UmlExemple3.png.png)  
+
 # Première étape
 
 On crée nos objets _receiver_ :
@@ -146,7 +150,7 @@ public class Telecommande {
 }
 ```
 
-Nous avons ici fait le choix d'utiliser une télécommande à 4 boutons, comme vous pouvez le remarquer, aucune commande n'a été implémentée pour les boutons, ces commandes seront implémentées directement lors de la creation de celle-ci.
+Nous avons ici fait le choix d'utiliser une télécommande à 4 boutons, comme vous pouvez le remarquer, aucune commande n'a été implémentée pour les boutons, ces commandes seront implémentées directement lors de la création de celle-ci.
 
 # Cinquième et dernière étape 
 
