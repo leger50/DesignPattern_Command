@@ -1,6 +1,6 @@
 # Diagramme
 
-![Uml exemple of Design Pattern Command](../images/DesignCommand_UmlExemple3.png.png)  
+![Uml exemple of Design Pattern Command](../images/DesignCommand_UmlExemple3.png)  
 
 # Première étape
 
