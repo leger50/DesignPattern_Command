@@ -1,7 +1,7 @@
 # Diagramme
 
 Voici le diagramme des classes importantes que nous allons implémenter.  
-La Télécommande va jouer le rôle du _client_, les boutons jouent le rôle _d'invoker_, les _ConcreteCommandes_ ConsoleOn et ConsoleOff qui vont executer les méthodes nécessaires du _receiver_ Console.  
+La Télécommande va jouer le rôle du _client_, les boutons jouent le rôle _d'invoker_, les _ConcreteCommandes_ ConsoleOn et ConsoleOff vont éxécuter les méthodes nécessaires du _receiver_ Console.  
 ![Uml exemple of Design Pattern Command](../images/DesignCommand_UmlExemple3.png)  
 
 # Première étape
