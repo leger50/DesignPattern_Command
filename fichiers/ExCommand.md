@@ -11,7 +11,7 @@ public class Console {
 	}
 	
 	public void off(){
-		System.out.println("La console est eteinte");
+		System.out.println("La console est éteinte");
 	}
 	
 	public void startGame(){
@@ -19,7 +19,7 @@ public class Console {
 	}
 	
 	public void stopGame(){
-		System.out.println("Jeu arrété");
+		System.out.println("Jeu arrêté");
 	}
 }
 ```
@@ -35,7 +35,7 @@ public class Radio {
 	}
 	
 	public void off(){
-		System.out.println("La radio est eteinte");
+		System.out.println("La radio est éteinte");
 	}
 	
 	public void volumeUp(){
