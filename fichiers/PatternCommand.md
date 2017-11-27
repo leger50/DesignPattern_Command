@@ -9,12 +9,12 @@ Comme vous l’aurez compris ce pattern a, tout d’abord, un but de sécurité 
 # Son implémentation ?
 
 ![Uml of Design Pattern Command](../images/DesignCommand_UML.png)  
-Ça peut paraitre un peu barbare comme diagramme mais nous allons voir par la suite que le principe est très facile à comprendre.
+Cela peut paraitre un peu barbare comme diagramme mais nous allons voir par la suite que le principe est très facile à comprendre.
 
 Détaillons ce pattern :
--	Le client va déclencher une requete, role _d'invocator_
+-	Le client va déclencher une requete, role _d'invoker_
 -	À cette action est associée une commande, une _concreteCommande_ implémentant l'interface _Commande_,
--	La _concrete commande_ va ensuite déclencher la méthode de l'objet associée, il est le _receiver_.
+-	La _concreteCommande_ va ensuite déclencher la méthode de l'objet associée, il est le _receiver_.
 
 # Parce qu'un exemple vaut mieux qu'un long discours...
 
@@ -22,9 +22,9 @@ Détaillons ce pattern :
 Le client commande une salade composée. Il crée une nouvelle assiette, sur laquelle il exécute les méthodes : addSalade(), addPate() et addPoulet().
 
 **Avec le pattern command :**
-Le client actionne _l’Invocator_ de la salade césar (un bouton souvent).  
+Le client actionne _l’Invoker_ de la salade césar (un bouton souvent).  
 La _ConcreteCommande_ « PreparerSaladeCesar » est exécutée et va créer une nouvelle assiette.  
-Ce qui a pour conséquence d'invoquer les méthodes _addSalade()_, _addPate()_ et _addPoulet()_ de l’assiette.
+Ce qui permet d'invoquer les méthodes _addSalade()_, _addPate()_ et _addPoulet()_ de l’assiette.
 
 ![Uml of exemple PatternCommand](../images/DesignCommand_exCooking.PNG)
 
